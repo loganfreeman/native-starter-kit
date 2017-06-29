@@ -56,7 +56,7 @@ class Home extends Component {
                 DrawerNav.goBack();
               }}
             >
-              <Icon active name="power" />
+              <Icon active name="home" />
             </Button>
           </Left>
 
