@@ -1,5 +1,5 @@
 import type { Action } from "../actions/types";
-import { SET_INDEX } from "../actions/list";
+import { SET_INDEX, GET_LIST. SET_LIST } from "../actions/list";
 
 export type State = {
   list: string
@@ -18,6 +18,18 @@ export default function(state: State = initialState, action: Action): State {
       ...state,
       selectedIndex: action.payload
     };
+  }
+
+  if(action.type == GET_LIST) {
+    return function(dispatch) {
+      var promise = new Promise(function(resolve, reject) {
+        setTimeout(resolve, 1000);
+      });
+
+      promise.then(() => {
+
+      })
+    }
   }
   return state;
 }
