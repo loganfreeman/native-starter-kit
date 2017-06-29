@@ -9,7 +9,8 @@ import {
   Content,
   Icon
 } from "native-base";
-const routes = ["Home", "BlankPage2"];
+
+const routes = ["Home"];
 export default class DrawBar extends React.Component {
   static navigationOptions = {
     header: null
@@ -39,11 +40,10 @@ export default class DrawBar extends React.Component {
               onPress={() => this.props.navigation.navigate("DrawerClose")}
             >
               <Image
-                square
-                style={{ height: 80, width: 70 }}
-                source={{
-                  uri: "https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/logo.png"
+                style={{
+                  height: 120
                 }}
+                source={require('../../../images/logo.png')}
               />
             </TouchableOpacity>
           </Image>

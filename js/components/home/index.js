@@ -39,7 +39,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(DrawNav, "786785786");
     return (
       <Container style={styles.container}>
         <Header>
@@ -110,8 +109,7 @@ const mapStateToProps = state => ({
 const HomeSwagger = connect(mapStateToProps, bindAction)(Home);
 const DrawNav = DrawerNavigator(
   {
-    Home: { screen: HomeSwagger },
-    BlankPage2: { screen: BlankPage2 }
+    Home: { screen: HomeSwagger }
   },
   {
     contentComponent: props => <DrawBar {...props} />
